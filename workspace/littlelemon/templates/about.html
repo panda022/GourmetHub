@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <title>Little Lemon</title>
+        <meta name="description" content="A brief description" />
+        <meta
+          name="author"
+          content="Based in Canada, Little Lemon is a family owned restaurant, focused on traditional recipes served with a modern twist."
+        />
+    
+        <!-- Load favicon -->
+        <link
+          rel="shortcut icon"
+          type="image/png"
+          href="{% static 'img/favicon.ico' %}"
+        />
+    
+        <!-- Include your CSS files here -->
+        <link
+          rel="preload"
+          as="style"
+          href="{% static 'css/style.css' %}"
+          onload="this.rel = 'stylesheet'"
+        />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+    <header>
+      <img src="{% static 'img/logo18.png' %}" />
+        </header>
+        <nav>
+          <ul>
+            
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'menu' %}">Menu</a></li>
+            <li><a href="{% url 'booking' %}">Book</a></li>
+          </ul>
+      </nav>
+<body>
+  <section>
+    <article>
+      <h1>About Us</h1>
+      <!--Begin row-->
+      <div class="row">
+        <!--Begin col-->
+        <div class="column">
+          <p>
+            Based in Halifax, Nova Scotia, Little Lemon is a family owned
+            restaurant, focused on traditional Chinese and Janpanese recipes served with a
+            modern twist.
+          </p>
+          <p>
+            The chefs draw inspiration from Chiniese culture
+            and have a menu of 12-15 items that they rotate seasonally.
+          </p>
+  
+          <p>
+            The restaurant has a rustic and relaxed atmosphere with moderate
+            prices, making it a popular place for a meal any time of the day.
+          </p>
+  
+          <p>
+            Little Lemon is owned by Chinese family, they
+            moved to the Canada to pursue their shared dream of owning a
+            restaurant.
+          </p>
+  
+          <p>
+            To craft the menu, Mario relies on family recipes and his experience
+            as a chef .
+          </p>
+  
+          <p>
+            Adrian does all the marketing for the restaurant and led the effort to
+            expand the menu beyond classic Janpanese Sushi.
+          </p>
+        </div>
+        <!--End col-->
+  
+        <!--Begin col-->
+        <div class="column">
+          <figure class="figure">
+            <img
+              src="{% static 'img/sushi_restaurant2.jpg' %}"
+              alt="Mario and Adrian"
+            />
+            <figcaption class="figure-caption">
+              Little Lemon owners Chinese family.
+            </figcaption>
+          </figure>
+        </div>
+        <!--End col-->
+      </div>
+      <!--End row-->
+    </article>
+  </section>
+  <footer>
+    <article>
+      <img src="{% static 'img/logo_footer.png' %}" />
+    </article>
+    <article>
+      <p>Copyright {{ current_year }} Little Lemon</p>
+    </article>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
