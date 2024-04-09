@@ -13,6 +13,10 @@ from .forms import BookingForm
 # Create your views here.
 from django.http import HttpResponse
 
+import requests
+import json
+
+
 # def sayHello(request):
 #     return HttpResponse('Hello World')
 def index(request):
@@ -36,7 +40,30 @@ def book(request):
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
-            form.save()
+            # Save the booking to the database
+            new_booking = form.save()
+
+
+            # Prepare data for sending to API Gateway
+            data = {
+                'ID': new_booking.ID,
+                'Name': new_booking.Name,
+                'No_of_guests': new_booking.No_of_guests,
+                'BookingDate': new_booking.BookingDate.strftime('%Y-%m-%d %H:%M')
+            }
+
+            # URL of my API Gateway endpoint
+            api_gateway_url = 'https://qffzlcdrfh.execute-api.us-east-1.amazonaws.com/term-api-test/user'
+
+            # Sending a POST request to the API Gateway
+            try:
+                response = requests.post(api_gateway_url, json=data)
+                response.raise_for_status()
+                # Optional: Do something with the response
+            except requests.exceptions.RequestException as e:
+                # Handle any errors here (e.g., log them)
+                print(e)
+
     context = {'form':form}
     return render(request, 'book.html', context)
 
