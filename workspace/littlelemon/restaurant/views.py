@@ -53,8 +53,8 @@ def book(request):
             }
 
             # URL of my API Gateway endpoint
-            api_gateway_url = 'https://qffzlcdrfh.execute-api.us-east-1.amazonaws.com/term-api-test/user'
-
+            # api_gateway_url = 'https://qffzlcdrfh.execute-api.us-east-1.amazonaws.com/term-api-test/user'
+            api_gateway_url = 'https://o0gf3wqtv5.execute-api.us-east-1.amazonaws.com/test-sns/user'
             # Sending a POST request to the API Gateway
             try:
                 response = requests.post(api_gateway_url, json=data)
