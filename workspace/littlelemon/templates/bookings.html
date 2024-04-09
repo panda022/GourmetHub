@@ -1,20 +1,16 @@
 
 {% load static %}
 
+
 <section>
   <article>
-    <!-- Add your code in the line below  -->
-    <h1> <!--Add title here --> </h1>
-
+    <h1>All Reservations</h1>
+    <pre id="bookings"></pre>
     <!--Begin row-->
     <div class="row">
       <!--Begin col-->
       <div class="column">
-        <form action="" method="post">
-          {% csrf_token %}
-          {{form.as_p}}
-          <input type="submit" id="button">
-        </form>
+        <pre id="bookings"></pre>
       </div>
       <!--End col-->
 
@@ -36,9 +32,11 @@
 
   </article>
 </section>
+
 <!-- Add your code inside the script tags below  -->
 <script>
-  
+  const bookings = JSON.parse('{{ bookings|safe }}');
+  document.getElementById('bookings').textContent = JSON.stringify(bookings, null, 2);
 </script>
 
 

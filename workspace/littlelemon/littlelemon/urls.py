@@ -24,12 +24,12 @@ from restaurant.views import BookingViewSet
 
 
 # Create a router and register our viewsets with it.
-router = DefaultRouter()
-router.register(r'booking', BookingViewSet)
+# router = DefaultRouter()
+# router.register(r'booking', BookingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('restaurant/', include('restaurant.urls')),  # Corrected this line
     # Add the router URLs
-    path('restaurant/', include(router.urls)),
+    # path('restaurant/', include(router.urls)),
 ]
