@@ -5,10 +5,12 @@ My project is an online restaurant website designed to offer visitors an immersi
 
 ## Youtube demo video
 ### Project Introduction :[https://youtu.be/N1PLOeGyfmE](https://youtu.be/N1PLOeGyfmE)
-### or  get all posts : [http://pan-gong-blog.us-east-1.elasticbeanstalk.com/api/posts](http://pan-gong-blog.us-east-1.elasticbeanstalk.com/api/posts)
+### Demo : [https://youtu.be/y8kRMEncztE](https://youtu.be/y8kRMEncztE)
+### Demo gif: ![online booking resaurant](https://github.com/panda022/GourmetHub/assets/105373708/5d525b05-cd4c-4a80-9d88-6556539362e2)
 
 
-# AWS Productes Menu Item Requirements
+
+# AWS Products Menu Item Requirements
 •	List of selected services
 Compute – Pick two (2): AWS EC2 , AWS Lambda
 Storage – Pick one (1): AWS Relational Database Service (mysql)
