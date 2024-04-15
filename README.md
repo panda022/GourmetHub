@@ -20,11 +20,11 @@ Compute: I chose AWS EC2 over Elastic Beanstalk due to the greater freedom it of
 Storage: For my structured booking information, I selected AWS Relational Database Service (RDS) with MySQL over RDS with NoSQL, as MySQL better suits my data organization needs.
 
 ## Deployment Model
-	I chose a deployment model based on the Public Cloud, primarily because of its popularity and cost-effectiveness. I do not need to buy the infrastructure. I just pay for what I use in deploying the web application.
+I chose a deployment model based on the Public Cloud, primarily because of its popularity and cost-effectiveness. I do not need to buy the infrastructure. I just pay for what I use in deploying the web application.
 
 ## Delivery Model
-	I chose a hybrid delivery model incorporating Infrastructure as a Service (IaaS), Software as a Service (SaaS), and Function as a Service (FaaS). I opted for IaaS as I needed to set up and configure services such as EC2, RDS, and VPC, allowing me to manage and monitor the required software efficiently. Additionally, I leveraged SaaS by utilizing the AWS SNS service for sending notifications to customers, which streamlined communication processes. Furthermore, I integrated FaaS into my delivery model by developing Lambda functions to invoke the SNS service upon user booking, enhancing the responsiveness and scalability of the system.
-l
+I choose a hybrid delivery model incorporating Infrastructure as a Service (IaaS), Software as a Service (SaaS), and Function as a Service (FaaS). I opted for IaaS as I needed to set up and configure services such as EC2, RDS, and VPC, allowing me to manage and monitor the required software efficiently. Additionally, I leveraged SaaS by utilizing the AWS SNS service for sending notifications to customers, which streamlined communication processes. Furthermore, I integrated FaaS into my delivery model by developing Lambda functions to invoke the SNS service upon user booking, enhancing the responsiveness and scalability of the system.
+
 
 
 
