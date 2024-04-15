@@ -4,7 +4,7 @@
 My project is an online restaurant website designed to offer visitors an immersive experience. By showcasing the restaurant's menu, interior ambiance through photos, and operating hours, I aim to assist potential customers in making informed dining decisions. My primary objective is to streamline the reservation process by enabling online bookings and promptly notifying restaurant staff via email. My target users are individuals seeking dining options, and my performance targets include offering an appealing meal selection, facilitating convenient reservation bookings, and ultimately assisting the restaurant in attracting more customers.
 
 ## Youtube demo video
-### try get  endpoints :[http://pan-gong-blog.us-east-1.elasticbeanstalk.com/actuator](http://pan-gong-blog.us-east-1.elasticbeanstalk.com/actuator)
+### Project Introduction :[https://youtu.be/N1PLOeGyfmE](https://youtu.be/N1PLOeGyfmE)
 ### or  get all posts : [http://pan-gong-blog.us-east-1.elasticbeanstalk.com/api/posts](http://pan-gong-blog.us-east-1.elasticbeanstalk.com/api/posts)
 
 
